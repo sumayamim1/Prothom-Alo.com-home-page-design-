@@ -1,0 +1,285 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Prothom Alo - Demo</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+
+<style>
+body {
+margin: 0;
+font-family: 'Inter', sans-serif;
+background: #ffffff;
+color: #111;
+}
+
+/* Top Bar */
+.top-bar {
+display: flex;
+justify-content: space-between;
+padding: 8px 30px;
+background: #f8f8f8;
+font-size: 14px;
+border-bottom: 1px solid #ddd;
+}
+
+.actions button {
+border: none;
+padding: 6px 14px;
+cursor: pointer;
+border-radius: 20px;
+font-weight: 600;
+transition: 0.3s;
+}
+
+.login {
+background: transparent;
+}
+
+.subscribe {
+background: #d71920;
+color: white;
+}
+
+.subscribe:hover {
+background: #b01519;
+}
+
+/* Header */
+.header {
+text-align: center;
+padding: 15px 0;
+position: sticky;
+top: 0;
+background: #fff;
+z-index: 1000;
+box-shadow: 0 2px 10px rgba(0,0,0,0.05);
+}
+
+.logo {
+font-size: 48px;
+color: #d71920;
+margin: 0;
+font-family: Georgia, "Times New Roman", serif;
+letter-spacing: 1px;
+}
+
+.nav {
+margin-top: 10px;
+}
+
+.nav a {
+text-decoration: none;
+color: #111;
+margin: 0 12px;
+font-size: 14px;
+font-weight: 600;
+transition: 0.3s;
+}
+
+.nav a:hover {
+color: #d71920;
+}
+
+/* Divider */
+.double-line {
+border-top: 2px solid #000;
+border-bottom: 1px solid #000;
+height: 3px;
+margin: 10px 0;
+}
+
+/* Layout */
+.layout {
+display: grid;
+grid-template-columns: 1fr 2.6fr 1.4fr;
+gap: 30px;
+padding: 30px;
+}
+
+/* Left Section */
+.left {
+background: #fafafa;
+padding: 20px;
+border-radius: 10px;
+box-shadow: 0 5px 15px rgba(0,0,0,0.05);
+}
+
+.tag {
+font-size: 13px;
+font-weight: bold;
+color: #d71920;
+text-transform: uppercase;
+}
+
+.left h2 {
+font-size: 26px;
+line-height: 1.4;
+margin-top: 10px;
+}
+
+.left p {
+font-size: 15px;
+line-height: 1.6;
+color: #444;
+}
+
+.read {
+font-size: 13px;
+color: #777;
+margin-top: 8px;
+}
+
+/* Center */
+.center img {
+width: 100%;
+border-radius: 10px;
+box-shadow: 0 5px 20px rgba(0,0,0,0.1);
+transition: 0.4s;
+}
+
+.center img:hover {
+transform: scale(1.02);
+}
+
+.caption {
+font-size: 12px;
+color: #666;
+margin-top: 8px;
+}
+
+/* Right Section */
+.right {
+background: #fafafa;
+padding: 20px;
+border-radius: 10px;
+box-shadow: 0 5px 15px rgba(0,0,0,0.05);
+}
+
+.grid {
+display: grid;
+grid-template-columns: 1fr 1fr;
+gap: 10px;
+}
+
+.grid img {
+width: 100%;
+border-radius: 8px;
+transition: 0.3s;
+}
+
+.grid img:hover {
+transform: scale(1.08);
+}
+
+.right h3 {
+font-size: 20px;
+margin-top: 15px;
+}
+
+/* Footer */
+.footer {
+text-align: center;
+padding: 20px;
+font-size: 14px;
+background: #111;
+color: #fff;
+margin-top: 40px;
+}
+
+/* Responsive */
+@media (max-width: 992px) {
+.layout {
+grid-template-columns: 1fr 2fr;
+}
+.right {
+display: none;
+}
+}
+
+@media (max-width: 768px) {
+.layout {
+grid-template-columns: 1fr;
+padding: 15px;
+}
+.nav {
+display: flex;
+flex-wrap: wrap;
+justify-content: center;
+}
+.nav a {
+margin: 5px;
+}
+}
+</style>
+</head>
+
+<body>
+
+<div class="top-bar">
+<div class="date">Saturday, 1 February 2026</div>
+<div class="actions">
+<button class="login">Login</button>
+<button class="subscribe">Subscribe</button>
+</div>
+</div>
+
+<header class="header">
+<h1 class="logo">Prothom Alo</h1>
+<nav class="nav">
+<a href="#">Latest</a>
+<a href="#">Bangladesh</a>
+<a href="#">World</a>
+<a href="#">Trade</a>
+<a href="#">Opinion</a>
+<a href="#">Game</a>
+<a href="#">Entertainment</a>
+<a href="#">Jobs</a>
+<a href="#">Lifestyle</a>
+</nav>
+</header>
+
+<hr class="double-line">
+
+<main class="layout">
+<section class="left">
+<span class="tag">Analysis</span>
+<h2>New challenges in the country's economy</h2>
+<p>
+Inflation, dollar crisis and import expenditure pressure
+on the country's economy created new challenges.
+</p>
+<div class="read">Read in 5 minutes</div>
+<hr>
+<h3>Political unrest and its effects</h3>
+<div class="read">Read in 3 minutes</div>
+</section>
+
+<section class="center">
+<img src="https://picsum.photos/900/500?random=1" alt="Main News Image">
+<p class="caption">Photo: Demo Image</p>
+</section>
+
+<aside class="right">
+<div class="grid">
+<img src="https://picsum.photos/200/200?random=2">
+<img src="https://picsum.photos/200/200?random=3">
+<img src="https://picsum.photos/200/200?random=4">
+<img src="https://picsum.photos/200/200?random=5">
+</div>
+<h3>Today's hot news</h3>
+<p>
+Today's important report on education, technology and employment.
+</p>
+<div class="read">Read in 4 minutes</div>
+</aside>
+</main>
+
+<footer class="footer">
+<p>© 2026 Prothom Alo | Educational Demo Web Design</p>
+</footer>
+
+</body>
+</html>
